@@ -191,3 +191,11 @@ function displayImage(file) {
     };
     reader.readAsDataURL(file);
 }
+
+function clearData(){
+  const fileInput = document.getElementById("imageInput");
+  const file = fileInput.files[0];
+  if(file){
+    location.reload();
+  }
+}
