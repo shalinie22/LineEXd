@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <style>
+        table {
+          border-collapse: collapse;
+        }
+    
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+        }
+      </style>
+</head>
+<body >
+    <div>
+    <input type="file" id="imageInput" accept="image/*">
+    
+    <button onclick="uploadImage()">Upload</button>
+    <p></p>
+   <div id = "imageDIv">
+    <img src="" id="imagePreview" style="max-width: 400px; width: 100%; height: auto;">
+   </div>
+    <p></p>
+    <br/>
+    <!-- <button onclick="getData()">Get Result</button> -->
+    <button onclick="fetchFiles()">Get Result</button>
+    <p></p>
+    <br/>
+    <div style="display: table-row">
+    <div id="imageContainer" style="display: table-cell"></div>
+    <div id="tableContainer" style="display: table-cell;align-content:flex-end ;" ></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
