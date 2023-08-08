@@ -13,7 +13,7 @@ function uploadImage() {
   formData.append("file", file);
 //   displayImage(file)
   // Replace 'upload.php' or 'upload.js' with the URL to your server-side script
-  fetch("https://4355-35-227-151-188.ngrok-free.app/runcode", {
+  fetch("https://b1cb-34-105-117-98.ngrok-free.app/runcode", {
     method: "POST",
     body: formData,
   })
@@ -31,7 +31,7 @@ function uploadImage() {
 
 
 function fetchFiles() {
-    fetch('https://4355-35-227-151-188.ngrok-free.app/download_files',{
+    fetch('https://b1cb-34-105-117-98.ngrok-free.app/download_files',{
         // mode:'no-cors'
         method: "POST",
         body: "Get the files",
@@ -93,7 +93,7 @@ function fetchFiles() {
 
 
 function parseJSONFileAndCreateTable(jsonfile) {
-  fetch('https://4355-35-227-151-188.ngrok-free.app/json',{
+  fetch('https://b1cb-34-105-117-98.ngrok-free.app/json',{
     method: "POST",
     body: jsonfile
   }) // Replace 'data.json' with the actual path to your JSON file
